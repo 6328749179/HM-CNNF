@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../lib/libTAppCommon_static.a  CMakeFiles/TAppCommon_static.dir/program_options_lite.cpp.o
+/usr/bin/ranlib ../../../lib/libTAppCommon_static.a

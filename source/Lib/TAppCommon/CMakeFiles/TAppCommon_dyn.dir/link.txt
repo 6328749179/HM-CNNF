@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -O3 -DNDEBUG   -shared -Wl,-soname,libTAppCommon_dyn.so.1 -o ../../../lib/libTAppCommon_dyn.so.1.0 CMakeFiles/TAppCommon_dyn.dir/program_options_lite.cpp.o 

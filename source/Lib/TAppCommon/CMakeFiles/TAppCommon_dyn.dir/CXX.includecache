@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu/coding/HM-16.16/source/Lib/TAppCommon/program_options_lite.cpp
+stdlib.h
+-
+iostream
+-
+fstream
+-
+sstream
+-
+string
+-
+list
+-
+map
+-
+algorithm
+-
+program_options_lite.h
+/home/ubuntu/coding/HM-16.16/source/Lib/TAppCommon/program_options_lite.h
+
+/home/ubuntu/coding/HM-16.16/source/Lib/TAppCommon/program_options_lite.h
+iostream
+-
+sstream
+-
+string
+-
+list
+-
+map
+-
+

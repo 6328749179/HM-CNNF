@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -O3 -DNDEBUG   -shared -Wl,-soname,libTLibVideoIO_dyn.so.1 -o ../../../lib/libTLibVideoIO_dyn.so.1.0 CMakeFiles/TLibVideoIO_dyn.dir/TVideoIOYuv.cpp.o 

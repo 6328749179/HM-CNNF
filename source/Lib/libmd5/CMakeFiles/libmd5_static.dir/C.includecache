@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu/coding/HM-16.16/source/Lib/libmd5/libmd5.c
+stdint.h
+-
+string.h
+-
+libmd5.h
+/home/ubuntu/coding/HM-16.16/source/Lib/libmd5/libmd5.h
+
+/home/ubuntu/coding/HM-16.16/source/Lib/libmd5/libmd5.h
+stdint.h
+-
+

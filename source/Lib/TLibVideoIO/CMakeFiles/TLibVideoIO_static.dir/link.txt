@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../lib/libTLibVideoIO_static.a  CMakeFiles/TLibVideoIO_static.dir/TVideoIOYuv.cpp.o
+/usr/bin/ranlib ../../../lib/libTLibVideoIO_static.a
