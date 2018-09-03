@@ -1,2 +1,0 @@
-/usr/bin/ar cr ../../../lib/liblibmd5_static.a  CMakeFiles/libmd5_static.dir/libmd5.c.o
-/usr/bin/ranlib ../../../lib/liblibmd5_static.a
