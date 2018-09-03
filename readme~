@@ -24,7 +24,7 @@ make
 //Our CNN model and prototxt files were stored under the folder of bin, we also give the scripts and configurations in the folder of bin and cfg for demonstration.
 
 Training 
-noted that We did not give the complete file structure for training part since that would make the directory structure cumbersome.When the content in the file relates to the path, modify it to your own path.
+noted that We did not give the complete file structure for training since that would make the directory structure cumbersome.When the content in the file relates to the path, modify it to your own path.
 
 
 we have posted trained NN model and deploy prototxt files under folder of bin. we also give the scripts and train&solver prototxt for training your own NN model if you are interested.
