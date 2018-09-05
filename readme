@@ -12,7 +12,7 @@ Dtype rate = GetLearningRate();
 
 const Dtype clip_gradients = this->param_.clip_gradients()/rate;
 
-note that caffe libraries must be compiled by cmake, since we set caffe dependencies by "find_package" in CMakeLists.txt ,so you must set your own caffe path in the "HM-CNNF/CMakeLists.txt", modify this line "set(Caffe_DIR ../caffe-master)" in the "HM-CNNF/CMakeLists.txt" according to your caffe path. make sure that find_package(Caffe) can get correct caffe include dictionary${Caffe_INCLUDE_DIRS}. if not, you need to add amnully caffe include path in "build/CaffeConfig.cmake".  for example, in my computer that is
+note that caffe libraries must be compiled by cmake, since we set caffe dependencies by "find_package" in CMakeLists.txt , you must set your own caffe path in the "HM-CNNF/CMakeLists.txt", modify this line "set(Caffe_DIR ../caffe-master)" in the "HM-CNNF/CMakeLists.txt" according to your caffe path. make sure that find_package(Caffe) can get correct caffe include dictionary${Caffe_INCLUDE_DIRS}. if not, you need to add amnully caffe include path in "build/CaffeConfig.cmake".  for example, in my computer that is
 set(Caffe_INCLUDE_DIRS "/home/ubuntu/coding/caffe-master/src;/usr/include;/home/ubuntu/coding/caffe-master/build/include;/opt/OpenBLAS/include;/home/ubuntu/coding/caffe-master/include").
 
 if you turn on the "CPU_ONLY" mode when you compiling your caffe, you also must set the 'CPU_ONLY' to 1 in your HM-CNNF code which is defined in the source/Lib/TLibCommon/TypeDef.h. set 'CNNF_SAO_RDO' to 0, you will get reconstructions filtred fully by NN,the default value of CNNF_SAO_RDO is 1 for higher coding effciency.
@@ -37,6 +37,8 @@ before running this script,compile HM16.16[https://hevc.hhi.fraunhofer.de/svn/sv
 
 run generate_DataQP.m( by matlab). the reconstructions are divided into 35*35 patches with QP value and store to h5 file for caffe model traing.
 
-run train_net.sh to caffe network model. also Note modifying the file path
+run train_net.sh to caffe network model. also Note modifying the file path.
+
+run ./sequences_test/run_all_ai_encoder.sh to test all HEVC test sequences with four different QPs when you When you compile this project successfully and get an executable encoder TAppEncoder.
 
 
