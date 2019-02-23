@@ -1,9 +1,11 @@
+### introduce
+
 This contributions implement convolution neural network based loop filter for intra frames to improve the video coding effciency. The CTUs filtered by NN are compared with CTUs filtered by deblocking and SAO, better filtering is selected by RDO(Rate Distortion Optimization ).we integrate NN based loop filter into HM software by  calling caffe's C++ interface.
 
 HM-CNNF source code was tested and worked well on Linux system,but not tested on Windows system, so linux is also highly recommended for you to compile this project! 
 
 
-compiling
+### compiling
 
 before compiling this project, you must implement the compiling of caffe libraries [https://github.com/BVLC/caffe] 
 for implement adjustable gradient clipping, you should modify sgd_solver.cpp in your_caffe_root/src/caffe/solvers/, the modified file has been given. compared to original file,  the following codes are added in funciton ClipGradients():
@@ -23,7 +25,7 @@ make
 
 //Our CNN model and prototxt files were stored under the folder of bin, we also give the scripts and configurations in the folder of bin and cfg for demonstration.
 
-Training 
+### Training Process
 noted that We did not give the complete file structure for training part since that would make the directory structure cumbersome.When the content in the file relates to the path, modify it to your own path.
 
 

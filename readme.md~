@@ -1,3 +1,5 @@
+### 
+
 This contributions implement convolution neural network based loop filter for intra frames to improve the video coding effciency. The CTUs filtered by NN are compared with CTUs filtered by deblocking and SAO, better filtering is selected by RDO(Rate Distortion Optimization ).we integrate NN based loop filter into HM software by  calling caffe's C++ interface.
 
 HM-CNNF source code was tested and worked well on Linux system,but not tested on Windows system, so linux is also highly recommended for you to compile this project! 
