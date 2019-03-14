@@ -7,7 +7,7 @@ HM-CNNF source code was tested and worked well on Linux system,but not tested on
 
 ### compiling
 
-Before compiling this project, you must implement the compiling of caffe libraries [https://github.com/BVLC/caffe] 
+before compiling this project, you must implement the compiling of caffe libraries [https://github.com/BVLC/caffe] 
 for implement adjustable gradient clipping, you should modify sgd_solver.cpp in your_caffe_root/src/caffe/solvers/, the modified file has been given. compared to original file,  the following codes are added in funciton ClipGradients():
 
 Dtype rate = GetLearningRate();
