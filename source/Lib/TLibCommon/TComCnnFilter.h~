@@ -9,6 +9,28 @@
 #endif
 #include "caffe/caffe.hpp"
 
+#ifndef LAYER_H_
+#define LAYER_H_
+
+#ifdef _WIN32
+#include "caffe/layers/input_layer.hpp"
+#include "caffe/layers/conv_ristretto_layer.hpp"
+#include "caffe/layers/concat_ristretto_layer.hpp"
+#include "caffe/layers/eltwise_ristretto_layer.hpp"
+
+namespace caffe
+{
+  extern INSTANTIATE_CLASS(InputLayer);
+  REGISTER_LAYER_CLASS(ConvolutionRistretto);
+  REGISTER_LAYER_CLASS(ConcatRistretto);
+  REGISTER_LAYER_CLASS(EltwiseRistretto);
+
+
+}
+#endif
+
+#endif
+
 using namespace caffe;  // NOLINT(build/namespaces)
 using std::string;
 
